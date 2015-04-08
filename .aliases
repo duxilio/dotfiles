@@ -1,0 +1,32 @@
+makedircd(){
+  mkdir -p $1 && cd $1
+}
+
+gclonecd(){
+  git clone $1 && cd $1
+}
+
+
+alias clr=clear
+alias md="makedircd"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+alias py=python
+
+alias gac="git add --all :/ && git commit"
+alias gacp="git add --all :/ && git commit && git push"
+alias grao="git remote add origin"
+alias gs="git status"
+alias gcd="gclonecd"
+
+# Vagrant aliases
+alias v:up='vagrant up'
+alias v:down='vagrant halt'
+alias v:reload='vagrant reload'
+alias v:in='vagrant up && vagrant ssh'
+alias v:rp='vagrant reload --provision'
+alias v:i='v:in'
+alias v:r='v:reload'
+alias v:d='v:down'
+alias v:ri='v:r && v:i'
+alias v:rpi='v:rp && v:i'
