@@ -79,42 +79,11 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-makedircd(){
-  mkdir -p $1 && cd $1
-}
-
-gclonecd(){
-  git clone $1 && cd $1
-}
-
-
-alias clr=clear
-alias md="makedircd"
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-
-alias py=python
-
-alias gac="git add --all :/ && git commit"
-alias gacp="git add --all :/ && git commit && git push"
-alias grao="git remote add origin"
-alias gs="git status"
-alias gcd="gclonecd"
+# import aliases
+source ~/.aliases
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # added by travis gem
 [ -f /Users/koenvendrik/.travis/travis.sh ] && source /Users/koenvendrik/.travis/travis.sh
-
-#Vagrant Aliases
-alias v:up='vagrant up'
-alias v:down='vagrant halt'
-alias v:reload='vagrant reload'
-alias v:in='vagrant up && vagrant ssh'
-alias v:rp='vagrant reload --provision'
-alias v:i='v:in'
-alias v:r='v:reload'
-alias v:d='v:down'
-alias v:ri='v:r && v:i'
-alias v:rpi='v:rp && v:i'
