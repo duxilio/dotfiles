@@ -1,5 +1,4 @@
 alias clr=clear
-alias md="makedircd"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 alias py=python
@@ -8,7 +7,6 @@ alias gac="git add --all :/ && git commit"
 alias gacp="git add --all :/ && git commit && git push"
 alias grao="git remote add origin"
 alias gs="git status"
-alias gcd="gclonecd"
 
 # Vagrant aliases
 alias v:up="vagrant up"
