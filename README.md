@@ -12,3 +12,6 @@ git clone https://github.com/kvendrik/dotfiles.git && source bootstrap.sh
 ```
 source bootstrap.sh
 ```
+
+## Testing
+When you've customised the dotfiles or the `boostrap.sh` file in particular you might want to check what will happen when you would run `source bootstrap.sh`. For this you can run the bootstrapper with the `--test` flag which will copy the files to `./test/` instead of `~`.
