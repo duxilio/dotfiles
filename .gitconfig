@@ -1,0 +1,16 @@
+[user]
+	email = k.vendrik@gmail.com
+	name = Koen Vendrik
+
+[core]
+	editor = vim
+
+[push]
+	default = simple
+
+[alias]
+    gac = !"git add --all :/ && git commit"
+    gacp = !"git add --all :/ && git commit && git push"
+    grao = remote add origin
+    gs = status
+    gcd = !"gclonecd(){ git clone $1 && cd $1 }; gclonecd"
