@@ -1,0 +1,7 @@
+makedircd(){
+    mkdir -p $1 && cd $1
+}
+
+gclonecd(){
+    git clone $1 && cd $1
+}
