@@ -15,7 +15,7 @@ else
 fi
 
 # copy files
-rsync --exclude ".git/" --exclude ".gitignore" --exclude ".DS_Store" --exclude "bootstrap.sh" \
+rsync --exclude ".git/" --exclude ".gitignore" --exclude ".DS_Store" --exclude "bootstrap" \
       --exclude "README.md" --exclude "LICENSE" --exclude "test/" -av . $TO_DIR;
 
 
