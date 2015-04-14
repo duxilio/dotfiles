@@ -8,7 +8,7 @@ alias gacp="git add --all :/ && git commit && git push"
 alias grao="git remote add origin"
 alias gs="git status"
 
-#Remove all .DS_Store files recursively
+# Remove all .DS_Store files recursively
 alias rvdsstore='sudo find . -name ".DS_Store" -depth -exec rm {} \;'
 
 # Vagrant aliases
