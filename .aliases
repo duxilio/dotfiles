@@ -22,3 +22,7 @@ alias v:r="v:reload"
 alias v:d="v:down"
 alias v:ri="v:r && v:i"
 alias v:rpi="v:rp && v:i"
+
+# Android Studio - Android SDK
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/23.0.1:$ANDROID_HOME/tools
