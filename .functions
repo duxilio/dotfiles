@@ -5,7 +5,3 @@ mcd(){
 gcd(){
     git clone $1 && cd $(basename $1)
 }
-
-ionr(){
-    ionic run $1 --device -l -s -c
-}
