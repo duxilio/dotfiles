@@ -7,7 +7,7 @@ Then when you want to take them into use run `./bootstrap` which will `git pull`
 
 ## Installation
 ```
-git clone https://github.com/kvendrik/dotfiles.git && cd dotfiles && ./bootstrap
+git clone https://github.com/duxilio/dotfiles.git && cd dotfiles && ./bootstrap
 ```
 
 ## Updating
