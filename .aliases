@@ -25,6 +25,19 @@ alias v:d="v:down"
 alias v:ri="v:r && v:i"
 alias v:rpi="v:rp && v:i"
 
+# Get week number
+alias week='date +%V'
+
+# Stopwatch
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# Merge PDF files
+# Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
+alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
 # Android Studio - Android SDK
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/23.0.1:$ANDROID_HOME/tools
