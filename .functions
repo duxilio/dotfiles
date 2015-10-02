@@ -3,7 +3,12 @@ mcd(){
 }
 
 gcd(){
-    git clone $1 && cd $(basename $1 | sed -e 's/\.git//g')
+    if[ -z "$2" ]; then
+    	folder_name="$(basename $1 | sed -e 's/\.git//g')"
+    else
+    	folder_name="$2"
+    fi
+    git clone $1 && cd $folder_name
 }
 
 # Create a data URL from a file
