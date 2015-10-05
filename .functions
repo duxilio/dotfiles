@@ -47,3 +47,7 @@ function s() {
 		subl "$@";
 	fi;
 }
+
+funcion dkrm(){
+	docker kill $1; docker rm $1;
+}
