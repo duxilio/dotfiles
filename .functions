@@ -48,6 +48,6 @@ function s() {
 	fi;
 }
 
-funcion dkrm(){
+function dkrm(){
 	docker kill $1; docker rm $1;
 }
