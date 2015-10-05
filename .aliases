@@ -41,3 +41,6 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Android Studio - Android SDK
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/23.0.1:$ANDROID_HOME/tools
+
+# Hostfile
+alias reloadHosts='dscacheutil -flushcache'
